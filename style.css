@@ -28,7 +28,7 @@ button {
 
     font-family: var(--body-font), sans-serif;
     color: var(--accent-color);
-    font-size: clamp(15px, 3vw, 25px);
+    font-size: clamp(15px, 2vh, 25px);
 }
 
 body {
@@ -64,10 +64,6 @@ figure {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-figure > img {
-    width: 100%;
 }
 
 .content__header {
@@ -133,6 +129,15 @@ footer {
         background-size: cover;
     }
 
+    header {
+        margin-bottom: 2rem;
+    }
+
+    main,
+    figure {
+        margin: 0;
+    }
+
     main {
         display: flex;
         gap: 2rem;
@@ -141,7 +146,6 @@ footer {
 
     figure {
         min-width: 50%;
-        margin: 0;
     }
 
     .socials {
