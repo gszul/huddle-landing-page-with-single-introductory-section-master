@@ -28,7 +28,7 @@ button {
 
     font-family: var(--body-font), sans-serif;
     color: var(--accent-color);
-    font-size: clamp(15px, 2vh, 25px);
+    font-size: 15px;
 }
 
 body {
@@ -53,7 +53,7 @@ main {
 }
 
 .header__logo {
-    height: clamp(40px, 5vw, 100px);
+    height: clamp(40px, 5vw, 60px);
 }
 
 main {
@@ -111,7 +111,7 @@ footer {
 }
 
 .socials__logo {
-    width: 2rem;
+    width: 40px;
     border-radius: 50%;
     border: 1px solid black;
     padding: 10px;
@@ -125,27 +125,40 @@ footer {
 
 @media (width > 1050px) {
     body {
-        background: var(--domminant-color) url("images/bg-desktop.svg") no-repeat fixed;
+        background: var(--domminant-color) url("images/bg-desktop.svg") no-repeat;
         background-size: cover;
+        padding: 4rem;
     }
 
     header {
-        margin-bottom: 2rem;
+        margin-bottom: 6rem;
     }
 
-    main,
     figure {
         margin: 0;
     }
 
     main {
         display: flex;
-        gap: 2rem;
+        gap: 4rem;
         text-align: left;
     }
 
     figure {
         min-width: 50%;
+    }
+
+    figure > img {
+        width: 100%;
+    }
+
+    .content__header {
+        font-size: 3em;
+    }
+
+    .content__describe,
+    #register {
+        font-size: 1.4rem;
     }
 
     .socials {
