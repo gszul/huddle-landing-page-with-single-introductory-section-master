@@ -20,14 +20,14 @@ button {
 
 :root {
     --domminant-color: hsl(257, 40%, 49%);
-    --complementary-color: hsl(300, 69%, 71%);
-    --accent-color: white;
+    --accent-color: hsl(300, 69%, 71%);
+    --complementary-color: white;
 
     --headings-font: "Poppins";
     --body-font: "Open Sans";
 
     font-family: var(--body-font), sans-serif;
-    color: var(--accent-color);
+    color: var(--complementary-color);
     font-size: 15px;
 }
 
@@ -92,8 +92,8 @@ button {
 }
 
 button:hover {
-    background-color: var(--complementary-color);
-    color: var(--accent-color);
+    background-color: var(--accent-color);
+    color: var(--complementary-color);
     cursor: pointer;
 }
 
@@ -128,6 +128,7 @@ footer {
         background: var(--domminant-color) url("images/bg-desktop.svg") no-repeat;
         background-size: cover;
         padding: 4rem;
+        padding-bottom: 1rem;
     }
 
     header {
@@ -153,6 +154,7 @@ footer {
     }
 
     .content__header {
+        margin-top: 2rem;
         font-size: 3em;
     }
 
